@@ -1,0 +1,62 @@
+---
+name: 🌍 Publish
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    permissions: write-all
+    steps:
+      - name: ⬇️ Checkout
+        uses: actions/checkout@v4.1.1
+
+      - name: 🏗️ Setup just
+        uses: asdf-vm/actions/install@v3
+
+      - name: 💎 Install gems
+        uses: bundle install
+
+      - name: 👷 Build page
+        run: just build
+
+      - name: 📦 Publish artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: website
+          path: ./target
+          if-no-files-found: error
+  deploy:
+    needs: build
+    runs-on: ubuntu-22.04
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+    steps:
+      - name: ⬇️ Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: website
+          path: ./website
+
+      - name: 🚀 Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./website
+          cname: talks.rlemaitre.com
+
+      - name: 📢 Publish latest
+        uses: marvinpinto/action-automatic-releases@v1.2.1
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: true
+          title: "Development Build"
+          files: |
+            ./website/*

@@ -1,0 +1,14 @@
+= Talks
+
+This repository contains the slides and code for my talks.
+
+This work © 2024 by Raphaël Lemaitre is licensed under CC BY-SA 4.0
+
+== License
+
+https://talks.rlemaitre.com[This work,rel="cc:attributionURL"] by https://rlemaitre.com[Raphaël Lemaitre,rel="cc:attributionURL dct:creator", property="cc:attributionName"] is licensed under
+[link=http://creativecommons.org/licenses/by-sa/4.0/, target="_blank", rel="license noopener noreferrer",style="display:inline-block;"]
+CC-BY-SA 4.0
+image:https://mirrors.creativecommons.org/presskit/icons/cc.svg"[CC, style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"]
+image:https://mirrors.creativecommons.org/presskit/icons/by.svg"[BY, style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"]
+image:https://mirrors.creativecommons.org/presskit/icons/sa.svg"[SA, style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"]

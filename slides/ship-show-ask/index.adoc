@@ -1,0 +1,90 @@
+= Ship / Show / Ask
+:backend: revealjs
+:revealjsdir: https://cdn.jsdelivr.net/npm/reveal.js@4.5.0
+:source-highlighter: highlight.js
+:highlightjs-languages: scala3
+:rouge-style: monokai
+:icons: image
+:iconfont-name: devicon
+:iconsdir: ../assets/icons/
+:icontype: svg
+:experimental:
+:revealjs_theme: black
+:revealjs_keyboard: {13: 'next', 33: 'prev', 34: 'next'}
+:revealjs_slideNumber: c
+:revealjs_navigationMode: linear
+// :customcss: ../assets/css/iron.css
+:revealjs_width: 1024
+:revealjs_height: 1024
+:revealjs_plugin_notes: enabled
+:imagesdir: ../assets/images/ship-show-ask/
+Backend Blockchain Demo - January 12th, 2024
+
+== What is it?
+
+* Branching strategy combining
+** The features of Pull Requests
+** The ability to keep shipping changes
+
+[.columns]
+=== Changes Categorization
+
+[.column]
+image:ship.png[]
+*Ship*
+
+[.column]
+image:show.png[]
+*Show*
+
+[.column]
+image:ask.png[]
+*Ask*
+
+[%notitle]
+== Ship
+
+image::ship.png[background, size=contain, repeat=no-repeat]
+
+=== Ship
+
+image:ship-workflow.png[]
+
+* I added a feature using an established pattern
+* I fixed an unremarkable bug
+* I updated documentation
+* I improved my code based on your feedback
+
+
+[%notitle]
+== Show
+image::show.png[background, size=contain, repeat=no-repeat]
+
+=== Show
+image::show-workflow.png[]
+
+* I would love your feedback on how this code could be better
+* Look at this new approach or pattern I used
+* I refactored X so now it looks like this
+* What an interesting bug! Look how I fixed it.
+
+[%notitle]
+== Ask
+image::ask.png[background, size=contain, repeat=no-repeat]
+
+=== Ask
+image::ask-workflow.png[]
+
+* Will this work?
+* How do we feel about this new approach?
+* I need help to make this better please
+* I'm done for today, will merge tomorrow
+
+[%notitle]
+== Demo
+image::demo.png[background, size=contain, repeat=no-repeat]
+
+[%notitle]
+== Thank you!
+
+image::thank-you.png[background, size=contain, repeat=no-repeat]

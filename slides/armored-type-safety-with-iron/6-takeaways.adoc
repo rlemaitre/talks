@@ -1,0 +1,15 @@
+== Takeaways
+ifndef::imagesdir[]
+:imagesdir: ../assets/images/iron/
+endif::[]
+
+[quote, Yaron Minsky, Effective ML Revisited]
+Making illegal states unrepresentable
+
+== Takeaways
+
+Scala 3 type system is incredibly powerful
+
+== Takeaways
+Noticeably increased the reliability of our code
+

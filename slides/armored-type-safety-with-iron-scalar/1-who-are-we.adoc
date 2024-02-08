@@ -1,0 +1,31 @@
+== Who are we?
+ifndef::imagesdir[]
+:imagesdir: ../assets/images/iron/
+endif::[]
+
+[%notitle]
+[.columns]
+=== Who are we?
+
+[.column]
+--
+image:vbergeron.png[Valentin Bergeron, 200, right,role=circle]
+
+* Engineering Team Lead
+* Backend Blockchain
+
+image:ledger-logo.svg[Ledger,200]
+--
+
+[.column]
+--
+
+image:rlemaitre.jpeg[Raphaël Lemaitre, 200, right,role=circle]
+
+* Senior Staff Software Engineer
+* Backend Blockchain
+
+image:ledger-logo.svg[Ledger,200]
+
+--
+

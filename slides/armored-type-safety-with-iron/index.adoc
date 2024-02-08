@@ -1,0 +1,28 @@
+= Armored Type Safety with Iron
+:backend: revealjs
+:revealjsdir: https://cdn.jsdelivr.net/npm/reveal.js@4.5.0
+:source-highlighter: rouge
+:highlightjs-languages: scala
+:rouge-style: monokai
+:icons: image
+:iconfont-name: devicon
+:iconsdir: ../assets/icons/
+:icontype: svg
+:experimental:
+:revealjs_keyboard: {13: 'next', 33: 'prev', 34: 'next'}
+:revealjs_slideNumber: c
+:revealjs_navigationMode: linear
+:customcss: ../assets/css/iron.css
+:revealjs_width: 1920
+:revealjs_height: 1080
+:revealjs_plugin_notes: enabled
+:imagesdir: ../assets/images/iron/
+Scala Matters, Paris - November 28th, 2023
+
+include::./1-who-are-we.adoc[]
+include::./2-story-time.adoc[]
+include::./3-basic-solutions.adoc[]
+include::./4-iron.adoc[]
+include::./5-iron-loves-ecosystem.adoc[]
+include::./6-takeaways.adoc[]
+include::./7-thank-you.adoc[]

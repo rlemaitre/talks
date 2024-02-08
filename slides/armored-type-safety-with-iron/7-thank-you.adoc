@@ -1,0 +1,8 @@
+== Thank you!
+ifndef::imagesdir[]
+:imagesdir: ../assets/images/iron/
+endif::[]
+
+image:slides-url.svg[,stretch]
+
+Slides available at https://iron.rlemaitre.com[]

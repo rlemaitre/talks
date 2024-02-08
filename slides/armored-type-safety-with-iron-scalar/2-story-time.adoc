@@ -1,0 +1,73 @@
+== Story time
+ifndef::imagesdir[]
+:imagesdir: ../assets/images/iron/
+endif::[]
+
+[%notitle]
+=== Story time
+
+Suppose you find this code in your codebase
+
+[source,scala,data-id=code,data-line-numbers=""]
+----
+case class IBAN(
+  countryCode: String,
+  checkDigits: String,
+  bankCode: String,
+  branchCode: String,
+  accountNumber: String,
+  nationalCheckDigit: String
+)
+----
+
+[%notitle,data-auto-animate=""]
+=== Story time
+
+This looks good
+
+[source,scala,data-id=code,data-line-numbers=""]
+----
+val iban = IBAN(
+  "FR",
+  "14",
+  "20041",
+  "01005",
+  "0500013M026",
+  "06"
+)
+----
+
+[%notitle,data-auto-animate=""]
+=== Story time
+
+Until you find something like this
+
+[source,scala,data-id=code,data-line-numbers=""]
+----
+val shuffled = IBAN(
+  "0500013M026",
+  "FR",
+  "06",
+  "14",
+  "20041",
+  "01005"
+)
+----
+
+[%notitle,data-auto-animate=""]
+=== Story time
+
+So, you try this
+
+[source,scala,data-id=code,data-line-numbers=""]
+----
+val wtf = IBAN(
+  "🇫🇷",
+  "✅",
+  "🏦",
+  "🌳",
+  "🧾",
+  "🤡"
+)
+----
+
