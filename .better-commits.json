@@ -113,7 +113,7 @@
     "breaking_change": {
         "add_exclamation_to_title": true
     },
-    "confirm_commit": false,
+    "confirm_commit": true,
     "print_commit_output": true,
     "branch_pre_commands": [],
     "branch_post_commands": [],
