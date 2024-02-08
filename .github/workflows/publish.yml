@@ -20,7 +20,7 @@ jobs:
         uses: asdf-vm/actions/install@v3
 
       - name: 💎 Install gems
-        uses: bundle install
+        run: bundle install
 
       - name: 👷 Build page
         run: just build
