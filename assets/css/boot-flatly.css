@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.20">
-<meta name="author" content="Raphaël Lemaitre">
-<title>Raphaël Lemaitre&#8217;s talks</title>
-<style>
 /* Based on Flatly from Bootswatch (https://bootswatch.com/flatly/) */
 @import url("//fonts.googleapis.com/css?family=Lato:400,700,400italic");
 
@@ -358,50 +348,3 @@ video {
         font-size: 3vw;
     }
 }
-</style>
-</head>
-<body class="article">
-<div id="header">
-<h1>Raphaël Lemaitre&#8217;s talks</h1>
-<div class="details">
-<span id="author" class="author">Raphaël Lemaitre</span><br>
-</div>
-</div>
-<div id="content">
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 33.3333%;">
-<col style="width: 33.3334%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Title</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Venue</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2023-11-28</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="scala-matters-2023-iron/index.html">Armored Type Safety with Iron</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.scalamatters.io/meetups">Scala Matters Paris</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2024-02-15</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="scalaio-2024-iron/index.html">Armored Type Safety with Iron</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://scala.io/talks/armored-type-safety-with-iron">Scala.io</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2024-03-21</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="scalar-conf-2024-iron/index.html">Armored Type Safety with Iron</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.scalar-conf.com/">Scalar Conference</a></p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div id="footer">
-<div id="footer-text">
-Last updated 2024-02-08 15:10:50 UTC
-</div>
-</div>
-</body>
-</html>
