@@ -1,7 +1,8 @@
 = Raphaël Lemaitre's talks
 :backend: html5
 :author: Raphaël Lemaitre
-:email: raphael@rlemaitre.com
+:stylesdir: assets/css
+:stylesheet: boot-flatly.css
 
 [cols="1,1,1"]
 |===
@@ -10,14 +11,14 @@
 | Venue
 
 | 2023-11-28
-| xref:armored-type-safety-with-iron/index.adoc[Armored Type Safety with Iron]
+| xref:scala-matters-2023-iron/index.adoc[Armored Type Safety with Iron]
 | https://www.scalamatters.io/meetups[Scala Matters Paris]
 
 | 2024-02-15
-| xref:armored-type-safety-with-iron-scalaio/index.adoc[Armored Type Safety with Iron]
+| xref:scalaio-2024-iron/index.adoc[Armored Type Safety with Iron]
 | https://scala.io/talks/armored-type-safety-with-iron[Scala.io]
 
 | 2024-03-21
-| xref:armored-type-safety-with-iron-scalar/index.adoc[Armored Type Safety with Iron]
+| xref:scalar-conf-2024-iron/index.adoc[Armored Type Safety with Iron]
 | https://www.scalar-conf.com/[Scalar Conference]
 |===

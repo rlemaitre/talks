@@ -2,16 +2,19 @@ target := "target"
 
 build: copy_assets
     #!/usr/bin/env sh
-     echo "🚀 Building website" > /dev/stderr
-     for file in $(find website -name '*.adoc' -print); do
-         just build_page "$file"
-     done
-     echo "👍 Done" > /dev/stderr
+    echo "🚀 Building website" > /dev/stderr
+    for file in $(find website -name '*.adoc' -print); do
+        just build_page "$file"
+    done
+    echo "👍 Done" > /dev/stderr
     echo "🚀 Building talks" > /dev/stderr
     for file in $(find slides -name 'index.adoc' -print); do
         just build_talk "$file"
     done
     echo "👍 Done" > /dev/stderr
+
+watch:
+    fswatch -0 --one-per-batch --recursive --latency 2 slides website justfile | xargs -0 -I {} just build
 
 copy_assets:
     #!/usr/bin/env sh

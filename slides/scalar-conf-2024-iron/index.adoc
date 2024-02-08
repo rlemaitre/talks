@@ -17,7 +17,7 @@
 :revealjs_height: 1080
 :revealjs_plugin_notes: enabled
 :imagesdir: ../assets/images/iron/
-Scalar Conference, Warsaw - March 21st, 2024
+Scalar Conference, Warsaw - March 22st, 2024
 
 include::./1-who-are-we.adoc[]
 include::./2-story-time.adoc[]
