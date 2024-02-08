@@ -39,7 +39,7 @@ build_page src:
     dst_dir=$(echo $(realpath $src_dir) | sed 's/website/{{target}}/')
     file=$(basename {{src}})
     mkdir -p $(dirname $dst_dir)
-    asciidoctor --base-dir $src_dir --source-dir $src_dir --destination-dir $dst_dir {{src}}
+    bundle exec asciidoctor --base-dir $src_dir --source-dir $src_dir --destination-dir $dst_dir {{src}}
 
 clean:
     #!/usr/bin/env sh
