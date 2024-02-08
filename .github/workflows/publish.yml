@@ -5,59 +5,47 @@ on:
   push:
     branches:
       - main
-  pull_request:
   workflow_dispatch:
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
-    permissions: write-all
+    runs-on: ubuntu-latest
     steps:
       - name: ⬇️ Checkout
-        uses: actions/checkout@v4.1.1
+        uses: actions/checkout@v4
+
+      - name: 📄 Configure Pages
+        id: pages
+        uses: actions/configure-pages@v3
+
+      - name: 💎 Install Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+          cache-version: 0
 
       - name: 🏗️ Setup just
-        uses: asdf-vm/actions/install@v3
-
-      - name: 💎 Install gems
-        run: bundle install
+        uses: extractions/setup-just@v1
 
       - name: 👷 Build page
         run: just build
 
-      - name: 📦 Publish artifact
-        uses: actions/upload-artifact@v3
+      - name: 📦 Upload Artifacts
+        uses: actions/upload-pages-artifact@v1
         with:
-          name: website
           path: ./target
-          if-no-files-found: error
-  deploy:
-    needs: build
-    runs-on: ubuntu-22.04
-    permissions: write-all
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
-    steps:
-      - name: ⬇️ Download artifact
-        uses: actions/download-artifact@v3
-        with:
-          name: website
-          path: ./website
 
-      - name: 🚀 Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main'
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./website
-          cname: talks.rlemaitre.com
-
-      - name: 📢 Publish latest
-        uses: marvinpinto/action-automatic-releases@v1.2.1
-        with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: "latest"
-          prerelease: true
-          title: "Development Build"
-          files: |
-            ./website/*
+      - name: 🚀 Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2

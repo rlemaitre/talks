@@ -1,0 +1,18 @@
+root = true
+
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+
+[{*.ad,*.adoc,*.asciidoc,.asciidoctorconfig}]
+# Common AsciiDoc settings that work across IDEs
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# Custom settings for the IntelliJ AsciiDoc plugin
+ij_asciidoc_blank_lines_after_header = 1
+ij_asciidoc_blank_lines_keep_after_header = 1
+ij_asciidoc_formatting_enabled = true
+ij_asciidoc_one_sentence_per_line = true
