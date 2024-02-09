@@ -1,8 +1,8 @@
 = Armored Type Safety with Iron
+:docdate: February 15th, 2024
 :backend: revealjs
-:revealjsdir: https://cdn.jsdelivr.net/npm/reveal.js@4.5.0
+:revealjsdir: https://cdn.jsdelivr.net/npm/reveal.js@4.6.0
 :source-highlighter: rouge
-:highlightjs-languages: scala
 :rouge-style: monokai
 :icons: image
 :iconfont-name: devicon
@@ -17,7 +17,10 @@
 :revealjs_height: 1080
 :revealjs_plugin_notes: enabled
 :imagesdir: ../assets/images/iron/
-Scala.IO, Nantes - February 15th, 2024
+:docinfo: shared-header,shared-footer
+February 15th, 2024
+
+image:ledger-logo.svg[height=75] image:scalaio.svg[height=75]
 
 include::./1-who-are-we.adoc[]
 include::./2-story-time.adoc[]

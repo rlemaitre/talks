@@ -3,12 +3,12 @@ ifndef::imagesdir[]
 :imagesdir: ../assets/images/iron/
 endif::[]
 
-[%notitle]
-=== Story time
+[%auto-animate,auto-animate-unmatched=false]
+=== !
 
 Suppose you find this code in your codebase
 
-[source,scala,data-id=code,data-line-numbers=""]
+[source%linenums,scala,data-id=code,data-line-numbers=""]
 ----
 case class IBAN(
   countryCode: String,
@@ -20,12 +20,12 @@ case class IBAN(
 )
 ----
 
-[%notitle,data-auto-animate=""]
-=== Story time
+[%auto-animate,auto-animate-unmatched=false]
+=== !
 
 This looks good
 
-[source,scala,data-id=code,data-line-numbers=""]
+[source%linenums,scala,data-id=code,data-line-numbers=""]
 ----
 val iban = IBAN(
   "FR",
@@ -37,12 +37,12 @@ val iban = IBAN(
 )
 ----
 
-[%notitle,data-auto-animate=""]
-=== Story time
+[%auto-animate,auto-animate-unmatched=false]
+=== !
 
 Until you find something like this
 
-[source,scala,data-id=code,data-line-numbers=""]
+[source%linenums,scala,data-id=code,data-line-numbers=""]
 ----
 val shuffled = IBAN(
   "0500013M026",
@@ -54,12 +54,12 @@ val shuffled = IBAN(
 )
 ----
 
-[%notitle,data-auto-animate=""]
-=== Story time
+[%auto-animate,auto-animate-unmatched=false]
+=== !
 
 So, you try this
 
-[source,scala,data-id=code,data-line-numbers=""]
+[source%linenums,scala,data-id=code,data-line-numbers=""]
 ----
 val wtf = IBAN(
   "🇫🇷",

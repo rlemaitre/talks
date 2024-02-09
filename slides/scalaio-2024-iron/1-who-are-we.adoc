@@ -9,7 +9,7 @@ endif::[]
 
 [.column]
 --
-image:vbergeron.png[Valentin Bergeron, 200, right,role=circle]
+image:vbergeron.png[Valentin Bergeron, 200, role=circle]
 
 * Engineering Team Lead
 * Backend Blockchain
@@ -20,7 +20,7 @@ image:ledger-logo.svg[Ledger,200]
 [.column]
 --
 
-image:rlemaitre.jpeg[Raphaël Lemaitre, 200, right,role=circle]
+image:rlemaitre.jpeg[Raphaël Lemaitre, 200, role=circle]
 
 * Senior Staff Software Engineer
 * Backend Blockchain
@@ -28,4 +28,7 @@ image:rlemaitre.jpeg[Raphaël Lemaitre, 200, right,role=circle]
 image:ledger-logo.svg[Ledger,200]
 
 --
+
+=== image:ledger-logo.svg[Ledger,200]
+
 

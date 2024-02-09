@@ -2,6 +2,7 @@
 :backend: html5
 :author: Raphaël Lemaitre
 :stylesdir: assets/css
+:imagesdir: assets/images
 :stylesheet: boot-flatly.css
 
 [cols="1,1,1"]
@@ -16,7 +17,7 @@
 
 | 2024-02-15
 | xref:scalaio-2024-iron/index.adoc[Armored Type Safety with Iron]
-| https://scala.io/talks/armored-type-safety-with-iron[Scala.io]
+| image:scalaio.svg[Scala.io,link=https://scala.io/talks/armored-type-safety-with-iron]
 
 | 2024-03-21
 | xref:scalar-conf-2024-iron/index.adoc[Armored Type Safety with Iron]
